@@ -1,0 +1,23 @@
+.conteiner
+  max-width: 1170px
+  padding: 0 10px
+  margin: 0 auto
+.clearfix
+  &::after
+    content: ''
+    display: table
+    clear: both
+
+@mixin font_weight($weight,$size)
+  color: #fff
+  font-family: 'Montserrat', sans-serif
+  font-weight: $weight
+  font-size: $size
+
+
+@mixin border($color,$width,$radius)
+  border:
+    color: $color
+    width: $width
+    radius: $radius
+    style: solid

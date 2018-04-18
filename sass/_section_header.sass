@@ -1,0 +1,104 @@
+.section_header
+  background-image: linear-gradient(-42deg, #573d7d 0%, #fb4c7f 100%)
+  padding: 27px 0 0 0
+  animation: background 4s infinite alternate
+
+@keyframes background
+  100%
+    background-position: 0 980px
+
+.section_header__head
+  @extend .clearfix
+  line-height: 46px
+
+.section_header__head__logo
+  float: left
+
+.section_header__head__menu
+  float: right
+
+.section_header__content--mobile>.section_header__content__mobile--box
+  width: 370px
+
+.section_header__head__logo--logo
+  @include font_weight(400,40px)
+  display: inline-block
+  vertical-align: middle
+  padding-left: 16px
+
+.section_header__head__menu--link
+  @include font_weight(400,15px)
+  text-transform: uppercase
+  letter-spacing: 0.75px
+  vertical-align: middle
+  margin: 0 10px
+  &:hover
+    text-decoration: underline
+
+.section_header__content
+  @extend .clearfix
+  background: url("../images/pic/background/header_lines.png") no-repeat
+  background-position: bottom
+  padding: 247px 0 0 0
+  position: relative
+
+
+.section_header__content__box--content
+  @include font_weight(400,40px)
+
+.section_header__content__box--title
+  @include font_weight(400,40px)
+  line-height: 55px
+  padding: 0 0 33px 0
+
+.section_header__content__box--content
+  @include font_weight(300,22px)
+  padding: 0 0 58px 2px
+  line-height: 33px
+
+.section_header__content--mobile
+  background: url("../images/pic/background/header_mobile.png")no-repeat
+  width: 430px
+  height: 865px
+  position: absolute
+  bottom: -112px
+  overflow: hidden
+
+.section_header__content__mobile--box
+  margin-top: 102px
+  margin-left: 31px
+
+
+.section_header__content__mobile__box--figure
+  width: 372px
+
+.section_header__content--box
+  float: right
+  display: inline-block
+  max-width: 655px
+  padding-right: 23px
+
+.section_header__content__box__menu--link
+  @include font_weight(400,18px)
+  @include border(#fff,1px,25px)
+  text-transform: uppercase
+  letter-spacing: 0.45px
+  width: 248px
+  text-align: center
+  display: inline-block
+  line-height: 48px
+  vertical-align: middle
+  margin-right: 13px
+  &:hover
+    background: #fff
+    color: black
+
+.section_header__content__box__menu__link--img
+  width: auto
+
+.section_header__head__logo-img
+  width: auto
+.section_header__content__box--menu
+  padding-bottom: 309px
+
+
